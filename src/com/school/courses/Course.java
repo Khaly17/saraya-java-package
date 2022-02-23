@@ -5,52 +5,42 @@ import com.school.users.Teacher;
 
 public class Course {
 
-    private String classTime;
-    private String nameCourses;
-    private String startTime;
-    private String endTime;
+ 
+    private String name;
+    private Integer startingHour;
+    private Integer endingHour;
     private Teacher teacher;
     private Grade grade;
 
-    public Course(String nameCourses, String classTime,  String startTime, String endTime) {
-        this.nameCourses = nameCourses;
-        this.classTime = classTime;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        // this.teacher = teacher;
-        // this.grade = grade;
+    public Course(String name, Integer startingHour, Integer endingHour) {
+        this.name = name;
+        this.startingHour = startingHour;
+        this.endingHour = endingHour;
     }
 
-    public String getClassTime() {
-        return classTime;
+
+    public String getName() {
+        return name;
     }
 
-    public void setClassTime(String classTime) {
-        this.classTime = classTime;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNameCourses() {
-        return nameCourses;
+    public Integer getStartingHour() {
+        return startingHour;
     }
 
-    public void setNameCourses(String nameCourses) {
-        this.nameCourses = nameCourses;
+    public void setStartingHour(Integer startingHour) {
+        this.startingHour = startingHour;
     }
 
-    public String getStartTime() {
-        return startTime;
+    public Integer getEndingHour() {
+        return endingHour;
     }
 
-    public void setStartTime(String startTime) {
-        this.startTime = startTime;
-    }
-
-    public String getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
+    public void setEndingHour(Integer endingHour) {
+        this.endingHour = endingHour;
     }
 
     public Teacher getTeacher() {
@@ -70,10 +60,9 @@ public class Course {
     }
 
     public void getInfo(){
-        System.out.println("NameCourse : "+ getNameCourses()+
-            "\nClass Time : "+getClassTime()+
-            "\nStart Time : "+getStartTime()+
-            "\nEnd Time : "+getEndTime()+
+        System.out.println("NameCourse : "+ getName()+
+            "\nStart Time : "+getStartingHour()+
+            "\nEnd Time : "+getEndingHour()+
             "\nFirstName teacher : "+getTeacher().getFirstName()+
             "\nLastName teacher : "+getTeacher().getLastName()+
             "\nMatricule teacher : "+getTeacher().getMatricule()+

@@ -3,11 +3,11 @@ package com.school.grades;
 public class Grade {
     //nom, nomStudent
     private String nameGrade;
-    private int numberStudent;
+    private Integer numberOfStudents;
 
-    public Grade(String nameGrade, int numberStudent) {
+    public Grade(String nameGrade, Integer numberOfStudents) {
         this.nameGrade = nameGrade;
-        this.numberStudent = numberStudent;
+        this.numberOfStudents = numberOfStudents;
     }
 
     public String getNameGrade() {
@@ -18,12 +18,12 @@ public class Grade {
         this.nameGrade = nameGrade;
     }
 
-    public int getNumberStudent() {
-        return numberStudent;
+    public Integer getNumberOfStudents() {
+        return numberOfStudents;
     }
 
-    public void setNumberStudent(int numberStudent) {
-        this.numberStudent = numberStudent;
+    public void setNumberOfStudents(Integer numberOfStudents) {
+        this.numberOfStudents = numberOfStudents;
     }
 
     
