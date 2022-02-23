@@ -69,7 +69,16 @@ public class Course {
         this.grade = grade;
     }
 
-    
+    public void getInfo(){
+        System.out.println("NameCourse : "+ getNameCourses()+
+            "\nClass Time : "+getClassTime()+
+            "\nStart Time : "+getStartTime()+
+            "\nEnd Time : "+getEndTime()+
+            "\nFirstName teacher : "+getTeacher().getFirstName()+
+            "\nLastName teacher : "+getTeacher().getLastName()+
+            "\nMatricule teacher : "+getTeacher().getMatricule()+
+            "\nGrade : "+ getGrade().getNameGrade());
+    }
 
     
 }

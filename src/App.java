@@ -20,57 +20,33 @@ public class App {
 
         System.out.println("============= TEACHER 1 ================");
 
-        System.out.println("FirstName : "+ teacher.getFirstName()+
-                    "\nLastName : "+teacher.getLastName()+
-                    "\nMatricule : "+ teacher.getMatricule());
+        teacher.getInfo();
 
         System.out.println("============= STUDENT 1 ================");
         student1.setGrade(grade1);
-        System.out.println("FirstName : "+ student1.getFirstName()+
-                    "\nLastName : "+student1.getLastName()+
-                    "\nGrade : "+ student1.getGrade().getNameGrade());
+        student1.getInfo();
         
         System.out.println("============= STUDENT 2 ================");
         student2.setGrade(grade2);
-        System.out.println("FirstName : "+ student1.getFirstName()+
-                    "\nLastName : "+student1.getLastName()+
-                    "\nGrade : "+ student1.getGrade().getNameGrade());
+        student2.getInfo();
 
         System.out.println("============= STUDENT 3 ================");
         student3.setGrade(grade2);
-        System.out.println("FirstName : "+ student1.getFirstName()+
-                    "\nLastName : "+student1.getLastName()+
-                    "\nGrade : "+ student1.getGrade().getNameGrade());
+        student3.getInfo();
 
         System.out.println("============= STUDENT 4 ================");
         student4.setGrade(grade1);
-         System.out.println("FirstName : "+ student1.getFirstName()+
-                    "\nLastName : "+student1.getLastName()+
-                    "\nGrade : "+ student1.getGrade().getNameGrade());
+        student4.getInfo();
 
         System.out.println("============= COURSE 1 ================");
         course1.setGrade(grade2);
         course1.setTeacher(teacher);
-        System.out.println("NameCourse : "+ course1.getNameCourses()+
-                    "\nClass Time : "+course1.getClassTime()+
-                    "\nStart Time : "+course1.getStartTime()+
-                    "\nEnd Time : "+course1.getEndTime()+
-                    "\nFirstName teacher : "+course1.getTeacher().getFirstName()+
-                    "\nLastName teacher : "+course1.getTeacher().getLastName()+
-                    "\nMatricule teacher : "+course1.getTeacher().getMatricule()+
-                    "\nGrade : "+ course1.getGrade().getNameGrade());
+        course1.getInfo();
 
         System.out.println("============= COURSE 2 ================");
         course2.setGrade(grade2);
         course2.setTeacher(teacher);
-        System.out.println("NameCourse : "+ course2.getNameCourses()+
-                    "\nClass Time : "+course2.getClassTime()+
-                    "\nStart Time : "+course2.getStartTime()+
-                    "\nEnd Time : "+course2.getEndTime()+
-                    "\nFirstName teacher : "+course2.getTeacher().getFirstName()+
-                    "\nLastName teacher : "+course2.getTeacher().getLastName()+
-                    "\nMatricule teacher : "+course2.getTeacher().getMatricule()+
-                    "\nGrade : "+ course2.getGrade().getNameGrade());
+        course2.getInfo();
         
         
     }

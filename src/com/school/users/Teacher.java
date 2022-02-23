@@ -36,6 +36,10 @@ public class Teacher {
         this.matricule = matricule;
     }
 
-    
+    public void getInfo(){
+        System.out.println("FirstName : "+ getFirstName()+
+            "\nLastName : "+getLastName()+
+            "\nMatricule : "+ getMatricule());
+    }
     
 }

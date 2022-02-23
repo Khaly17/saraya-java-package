@@ -37,4 +37,9 @@ public class Student {
         this.grade = grade;
     }
     
+    public void getInfo() {
+        System.out.println("FirstName : "+ getFirstName()+
+            "\nLastName : "+getLastName()+
+            "\nGrade : "+ getGrade().getNameGrade());
+    }
 }
