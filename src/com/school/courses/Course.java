@@ -7,12 +7,12 @@ public class Course {
 
  
     private String name;
-    private Integer startingHour;
-    private Integer endingHour;
+    private int startingHour;
+    private int endingHour;
     private Teacher teacher;
     private Grade grade;
 
-    public Course(String name, Integer startingHour, Integer endingHour) {
+    public Course(String name, int startingHour, int endingHour) {
         this.name = name;
         this.startingHour = startingHour;
         this.endingHour = endingHour;
@@ -27,19 +27,19 @@ public class Course {
         this.name = name;
     }
 
-    public Integer getStartingHour() {
+    public int getStartingHour() {
         return startingHour;
     }
 
-    public void setStartingHour(Integer startingHour) {
+    public void setStartingHour(int startingHour) {
         this.startingHour = startingHour;
     }
 
-    public Integer getEndingHour() {
+    public int getEndingHour() {
         return endingHour;
     }
 
-    public void setEndingHour(Integer endingHour) {
+    public void setEndingHour(int endingHour) {
         this.endingHour = endingHour;
     }
 
